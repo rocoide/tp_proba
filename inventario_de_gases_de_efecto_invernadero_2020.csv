@@ -1,0 +1,79 @@
+Numero de Referencia GPC|Alcance|Fuentes de gases de efecto invernadero|Claves de Anotación (IE NE NO C)|Gases de Efecto Invernadero (tCO2e) CO2|Gases de Efecto Invernadero (tCO2e) CH4|Gases de Efecto Invernadero (tCO2e)N2O|Gases de Efecto Invernadero (tCO2e) HFC|Gases de Efecto Invernadero (tCO2e) PFC|Gases de Efecto Invernadero (tCO2e) SF6|Gases de Efecto Invernadero (tCO2e) NF3|Gases de Efecto Invernadero (tCO2e) CO2e|Gases de Efecto Invernadero (tCO2e) CO2e(b)|Calidad de los Datos (H,M,L) AD|Calidad de los Datos (H,M,L)EF|Explicación
+I||ENERGÍA|||||||||||||
+I.1||Edificios residenciales|||||||||||||
+I.1.1|1|Emisiones de consumo de combustible en los límites del municipio.||328626,61|44,21|1,631|||||330296,73|29416,36|H|M|
+I.1.2|2|Emisiones de consumo de electricidad de la red eléctrica dentro de los límites del municipio||286349,91|6,06|1,78|||||286992,25||H|M|
+I.1.3|3|Emisiones de pérdidas en la transmisión y distribución en la red eléctrica||48935,25|1,04|0,3|||||49045,02||M|M|
+I.2||Edificios e instalaciones comerciales e institucionales|||||||||||||
+I.2.1|1|Emisiones de consumo de combustible en los límites del municipio||36222,92|0,63|0,06|||||36257,42|0|H|M|
+I.2.2|2|Emisiones de consumo de electricidad de la red eléctrica dentro de los límites del municipio||183811,8|3,89|1,14|||||184224,13|0|H|M|
+I.2.3|3|Emisiones de pérdidas en la transmisión y distribución en la red eléctrica||31412,18|0,66|0,2|||||31482,65||M|M|
+I.3||Industrias de fabricación y construcción|||||||||||||
+I.3.1|1|Emisiones de consumo de combustible en los límites del municipio||257749,35|4,58|0,46|||||257999,12|0|L|M|
+I.3.2|2|Emisiones de consumo de electricidad de la red eléctrica dentro de los límites del municipio||102350,44|2,17|0,64|||||102580,03||H|M|
+I.3.3|3|Emisiones de pérdidas en la transmisión y distribución en la red eléctrica||17490,99|0,37|0,11|||||17530,23||M|M|
+I.4||Industrias de energía|||||||||||||
+I.4.1|1|Emisiones de consumo de electricidad y combustible en operaciones auxiliares de plantas de energía en los límites del municipio. (Autoconsumo de electricidad)|NE|0|0|0|||||0|0|||No se estima por no contar con aceso a datos de Industrias energéticas
+I.4.2|2|Emisiones procedentes del consumo de la red eléctrica en las operaciones auxiliares de plantas de energía dentro de los límites del municipio||30046|0,64|0,19|||||30113,4||H|M|
+I.4.3|3|Emisiones procedentes de las pérdidas de transmisión y distribución de consumo de energía del la red eléctrica en operaciones auxiliares de centrales eléctricas||5134,66|0,11|0,03|||||5146,17||M|M|
+I.4.4|1|Emisiones procedentes de la generación de energía suministrada al la red eléctrica. Consumo de combustible.||3057,39|0,05|0,01|||||3060,36|0|H|M|
+I.5||Actividades de agricultura, silvicultura y pesca|||||||||||||
+I.5.1|1|Emisiones de la combustión de combustibles para generar energía en los límites del municipio||107815,87|7,06|6,34|||||109694,93|11957,67|H|M|
+I.5.2|2|Consumo de electricidad de la red eléctrica dentro de los límites del municipio||2359,54|0,05|0,01|||||2364,84||H|M|
+I.5.3|3|Emisiones de pérdidas en la transmisión y distribución en la red elécctrica||403,23|0,01|0|||||404,13||M|M|
+I.6||Fuentes no especificadas|||||||||||||
+I.6.1|1|Emisiones de consumo de combustible en los límites del municipio||49179,95|2,57|2,53|||||49923,44|0|H|M|
+I.6.2|2|Emisiones de consumo de electricidad de la red eléctrica dentro de los límites del municipio|NE|0|0|0|||||0||||
+I.6.3|3|Emisiones de pérdidas en la transmisión y distribución en la red elécctrica|NE|0|0|0|||||0||||
+I.7||Emisiones fugitivas de la minería, procesamiento, almacenamiento y transporte de carbón|||||||||||||
+I.7.1|1|Emisiones fugitivas que ocurren dentro del municipio|NO|0|0||||||0||||
+I.8||Las emisiones fugitivas de los sistemas de petróleo y gas natural|||||||||||||
+I.8.1|1|Emisiones fugitivas que ocurren dentro del municipio||24,98|490,25||||||13751,95||L|M|
+II||TRANSPORTE|||||||||||||
+II.1||Terrestre en carretera/ rodoviario|||||||||||||
+II.1.1|1|Emisiones dentro de los límites del municipio por la quema de combustible||941692,1|399,21|85,74|||||975590,68|86694,7|H|M|
+II.1.2|2|Emisiones de consumo de electricidad de la red eléctrica dentro de los límites del municipio en transporte terrestre||246,54|0,01|0|||||247,09||H|M|
+II.1.3|3|Emisiones de viajes transfronterizos y por pérdidas por transmisión y distribución de energía eléctrica suministrada por la red||42,13|0|0|||||42,23|0|L|M|
+II.2||Transporte ferroviario|||||||||||||
+II.2.1|1|Emisiones dentro de los límites del municipio por la quema de combustible||24898,78|1,55|9,76|||||27528,91|2881,12|H|M|
+II.2.2|2|Emisiones de consumo de electricidad de la red eléctrica dentro de los límites del municipio en transporte ferroviario|NO|0|0|0|||||0||||
+II.2.3|3|Emisiones de viajes transfronterizos y por pérdidas por transmisión y distribución de energía eléctrica suministrada por la red|NO|0|0|0|||||0|0|||
+II.3||Navegación|||||||||||||
+II.3.1|1|Emisiones dentro de los límites del municipio por la quema de combustible||1223,71|0,06|0,06|||||1242,58|0|H|M|
+II.3.2|2|Emisiones de consumo de electricidad de la red eléctrica dentro de los límites del municipio en la navegación|NE||||||||||||
+II.3.3|3|Emisiones de viajes transfronterizos y por pérdidas por transmisión y distribución de energía eléctrica suministrada por la red|NE||||||||||||
+II.4||Aviación|||||||||||||
+II.4.1|1|Emisiones dentro de los límites del municipio por la quema de combustible|NE|0|0|0|||||0|0|||No hay acceso a datos de consumos de este subsector
+II.4.2|2|Emisiones de consumo de electricidad de la red eléctrica dentro de los límites del municipio en la aviación|NE||||||||||||
+II.4.3|3|Emisiones de viajes transfronterizos y por pérdidas por transmisión y distribución de energía eléctrica suministrada por la red||8007,58|0,06|0,22|||||8068,51|0|H|M|
+II.5||Off-road|||||||||||||
+II.5.1|1|Emisiones dentro de los límites del municipio por la quema de combustible||0|0|0|||||0|0|||No hay acceso a datos de consumos de este subsector
+II.5.2|2|Emisiones de consumo de electricidad de la red eléctrica dentro de los límites del municipio en transporte off road|NE||||||||||||
+II.5.3|3|Emisiones de viajes transfronterizos y por pérdidas por transmisión y distribución de energía eléctrica suministrada por la red|NE||||||||||||
+III||RESIDUOS|||||||||||||
+III.1||Residuos Sólidos|||||||||||||
+III.1.1|1|Emisiones de residuos sólidos generados en el municipio y enviados a los vertederos dentro del municipio||0|5702,42|0|||||159667,89|0|L|L|
+III.1.2|3|Emisiones de residuos sólidos generados en el municipio y enviados a los vertederos fuera del municipio||0|13193,25|0|||||369411,13|0|H|L|
+III.1.3|1|Emisiones de residuos sólidos generados fuera del municipio y enviados a los vertederos dentro del municipio||0|0|0|||||0|0|||
+III.2||Tratamiento Biológico |||||||||||||
+III.2.1|1|Emisiones de residuos sólidos generados en el municipio y enviados para tratamiento biológico dentro del municipio||0|39,22|2,94|||||1877,47|0|L|L|
+III.2.2|3|Emisiones de residuos sólidos generados en el municipio y enviados para tratamiento biológico fuera del municipio|NO|0|0|0|||||0|0|||
+III.2.3|1|Emisiones de residuos sólidos generados fuera del municipio y enviados para tratamiento biológico dentro del municipio|NO|0|0|0|||||0|0|||
+III.3||Incineración|||||||||||||
+III.3.1|1|Emisiones de residuos sólidos generados en el municipio y enviados para incineración dentro del municipio|NO|0|0|0|||||0|0|||
+III.3.2|3|Emisiones de residuos sólidos generados en el municipio y enviados para incineración fuera del municipio||217,36|0|0|||||217,36|0|L|L|
+III.3.3|1|Emisiones de residuos sólidos generados fuera del municipio y enviados para incineración dentro del municipio|NO|0|0|0|||||0|0|||
+III.4||Tratamiento y eliminación de aguas residuales|||||||||||||
+III.4.1|1|Emisiones de efluentes generados y tratados dentro de los limites del municipio||0|1897,89|57,63|||||68413,41|0|L|L|
+III.4.2|3|Emisiones de efluentes generados en el municipio y tratados fuera del municipio|NO|0|0|0|||||0|0|||
+III.4.3|1|Emisiones de efluentes generados fuera del municipio y tratados dentro dos limites del municipio|NO|0|0|0|||||0|0|||
+IV||PROCESSOS INDUSTRIALES Y USO DE PRODUCTOS (IPPU)|||||||||||||
+IV.1|1|Emisiones dentro de los límites del municipio de los procesos industriales.|NE||||||||0|0|||No estimado por reportar en nivel BASIC
+IV.2|1|Emisiones dentro de los límites del municipio de lo uso de productos.  |NE||||||||||||No estimado por reportar en nivel BASIC
+V||AGRICULTURA, SILVICULTURA Y CAMBIO EN EL USO DEL SUELO (AFOLU)|||||||||||||
+V.1|1|Emisiones de ganadería dentro de los límites del municipio|NE|0|0|0|||||0|0|||No estimado por reportar en nivel BASIC
+V.2|1|Emisiones del uso del suelo dentro de los límites del municipio|NE||||||||||||No estimado por reportar en nivel BASIC
+V.3|1|Emisiones de fuentes agregadas y fuentes de emisión no CO2 en la tierra dentro de los límites del municipio|NE|0|0|0|||||0|0|||No estimado por reportar en nivel BASIC
+VI||OTRAS EMISIONES INDIRECTAS|||||||||||||
+VI.1|3||||||||||||||No hay acceso a datos del subsector
+V!.2|3||||||||||||||No hay acceso a datos del subsector
