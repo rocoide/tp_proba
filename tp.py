@@ -21,31 +21,31 @@ data_base = pd.read_csv(URL)
 data_base['FECHA'] = pd.to_datetime(data_base['FECHA'], format='%d%b%Y:%H:%M:%S')
                                                     # cambio los datos de la columna fecha a datos tipo datetime
 
-data_2022 = data_base[(data_base['FECHA'].dt.year <= 2022) & (data_base['FECHA'].dt.year >= 2019)]
+data_co = data_base[(data_base['FECHA'].dt.year <= 2022) & (data_base['FECHA'].dt.year >= 2019)]
                                                     # creo una base de datos solo con los valores del año 2022
 
-data_2022['FECHA'] = pd.to_datetime(data_2022['FECHA'], format='%d%m%Y:%H:%M:%S')
+data_co['FECHA'] = pd.to_datetime(data_co['FECHA'], format='%d%m%Y:%H:%M:%S')
                                                     # cambio los datos de la columna fecha a datos tipo datetime
 
-data_2022 = data_2022.sort_values("FECHA")
+data_co = data_co.sort_values("FECHA")
 
 
-data_2022 = data_2022.astype(str)
-data_2022 = data_2022[data_2022['CO_CENTENARIO'] != 'nan']
-data_2022 = data_2022[data_2022['CO_CENTENARIO'] != 's/d']
-data_2022 = data_2022[data_2022['CO_CORDOBA'] != 'nan']
-data_2022 = data_2022[data_2022['CO_CORDOBA'] != 's/d']
-data_2022 = data_2022[data_2022['CO_LA_BOCA'] != 'nan']
-data_2022 = data_2022[data_2022['CO_LA_BOCA'] != 's/d']
-data_2022 = data_2022[data_2022['CO_LA_BOCA'] != '#REF!']
-#data_2022 = data_2022[data_2022['CO_PALERMO'] != 'nan']
-#data_2022 = data_2022[data_2022['CO_PALERMO'] != 's/d']
+data_co = data_co.astype(str)
+data_co = data_co[data_co['CO_CENTENARIO'] != 'nan']
+data_co = data_co[data_co['CO_CENTENARIO'] != 's/d']
+data_co = data_co[data_co['CO_CORDOBA'] != 'nan']
+data_co = data_co[data_co['CO_CORDOBA'] != 's/d']
+data_co = data_co[data_co['CO_LA_BOCA'] != 'nan']
+data_co = data_co[data_co['CO_LA_BOCA'] != 's/d']
+data_co = data_co[data_co['CO_LA_BOCA'] != '#REF!']
+#data_co = data_co[data_co['CO_PALERMO'] != 'nan']
+#data_co = data_co[data_co['CO_PALERMO'] != 's/d']
                                                     #filtro las filas de las base de datos donde CO centenario tenga un campo vacio o un s/d
 
-data_2022 = data_2022.drop_duplicates(subset='FECHA', keep='last')
-#print (data_2022.shape)
+data_co = data_co.drop_duplicates(subset='FECHA', keep='last')
+#print (data_co.shape)
 
-#print(data_2022)
+#print(data_co)
 #                                                     #elimino las fechas repetidas, esto se podria mejorar calculando la media del dia
 
 
@@ -57,8 +57,8 @@ data_2022 = data_2022.drop_duplicates(subset='FECHA', keep='last')
 
 
 
-# data_2022.CO_LA_BOCA = data_2022.CO_LA_BOCA.astype(float)
-# co_boca = data_2022.CO_LA_BOCA
+# data_co.CO_LA_BOCA = data_co.CO_LA_BOCA.astype(float)
+# co_boca = data_co.CO_LA_BOCA
 # # #                                                      #Histograma
 
 
@@ -97,31 +97,38 @@ data_2022 = data_2022.drop_duplicates(subset='FECHA', keep='last')
 
 
 
-#####                                                  media movil
-
-
-#plt.title("Niveles de Monóxido de Carbono de 2019 a 2022", fontdict={"fontweight":"bold", "fontsize":17})
-
-#data_2022['FECHA'] = pd.to_datetime(data_2022['FECHA'])
-# data_2022 = data_2022.sort_values("FECHA")
-
-# data_2022.CO_CENTENARIO = data_2022.CO_CENTENARIO.astype(float)
-# data_2022.CO_CORDOBA = data_2022.CO_CORDOBA.astype(float)
-# data_2022.CO_LA_BOCA = data_2022.CO_LA_BOCA.astype(float)
-
-
-#data_2022.CO_CENTENARIO = data_2022.CO_CENTENARIO.mean()
-#data_2022.CO_CORDOBA = data_2022.CO_CORDOBA.mean()
-#data_2022.CO_LA_BOCA = data_2022.CO_LA_BOCA.mean()
 
 
 
-# plt.plot(data_2022.FECHA, data_2022.CO_CENTENARIO, 'y.-', label="centenario")
-# plt.plot(data_2022.FECHA, data_2022.CO_CORDOBA, 'r.-', label="cordoba")
-# plt.plot(data_2022.FECHA, data_2022.CO_LA_BOCA, 'b.-', label="La Boca")
+
+# # # # # # # #                                                     #Media movil
+
+
+# plt.title("Niveles de Monóxido de Carbono de 2019 a 2022 usando media movil", fontdict={"fontweight":"bold", "fontsize":17})
+
+# data_co['FECHA'] = pd.to_datetime(data_co['FECHA'])
+# data_co = data_co.sort_values("FECHA")
+
+# data_co.CO_CENTENARIO = data_co.CO_CENTENARIO.astype(float)
+# # # data_co.CO_CORDOBA = data_co.CO_CORDOBA.astype(float)
+# # # data_co.CO_LA_BOCA = data_co.CO_LA_BOCA.astype(float)
+
+# window_size = 7
+
+# data_co["CO_CENTENARIO_mm"] = data_co.CO_CENTENARIO.rolling(window=window_size).mean()
+# # #data_co["CO_CORDOBA_mm"] = data_co.CO_CORDOBA.rolling(window=window_size).mean()
+# # #data_co["CO_LA_BOCA_mm"] = data_co.CO_LA_BOCA.rolling(window=window_size).mean()
+
+
+# plt.plot(data_co.FECHA, data_co.CO_CENTENARIO, 'y.-', label="centenario")
+# plt.plot(data_co.FECHA, data_co.CO_CENTENARIO_mm, 'r.-', label="media movil centenario")
+# # # plt.plot(data_co.FECHA, data_co.CO_CORDOBA, 'y.-', label="cordoba")
+# # #plt.plot(data_co.FECHA, data_co.CO_CORDOBA_mm, 'r.-', label="media movil centenario")
+# # # plt.plot(data_co.FECHA, data_co.CO_LA_BOCA, 'b.-', label="La Boca")
+# # #plt.plot(data_co.FECHA, data_co.CO_LA_BOCA_mm, 'r.-', label="media movil centenario")
 # plt.xlabel("Fechas")
 # plt.ylabel("Nivel de Monóxido de Carbono")
-# # # # plt.xticks(rotation=45)
+# # # # # plt.xticks(rotation=45)
 # plt.legend()
 # plt.show()
 
@@ -145,32 +152,23 @@ data_2022 = data_2022.drop_duplicates(subset='FECHA', keep='last')
 
 
 
+# # # # # # #                                                     #Grafico plot
+# # plt.title("Niveles de Monóxido de Carbono de 2019 a 2022 usando media movil", fontdict={"fontweight":"bold", "fontsize":17})
 
-# # # # # #                                                     #Grafico plot
-# plt.title("Niveles de Monóxido de Carbono de 2019 a 2022 usando media movil", fontdict={"fontweight":"bold", "fontsize":17})
+# data_co['FECHA'] = pd.to_datetime(data_co['FECHA'])
+# data_co = data_co.sort_values("FECHA")
 
-data_2022['FECHA'] = pd.to_datetime(data_2022['FECHA'])
-data_2022 = data_2022.sort_values("FECHA")
-
-data_2022.CO_CENTENARIO = data_2022.CO_CENTENARIO.astype(float)
-# data_2022.CO_CORDOBA = data_2022.CO_CORDOBA.astype(float)
-# data_2022.CO_LA_BOCA = data_2022.CO_LA_BOCA.astype(float)
-
-window_size = 7
-
-data_2022["CO_CENTENARIO_mm"] = data_2022.CO_CENTENARIO.rolling(window=window_size).mean()
-#data_2022["CO_CORDOBA_mm"] = data_2022.CO_CORDOBA.rolling(window=window_size).mean()
-#data_2022["CO_LA_BOCA_mm"] = data_2022.CO_LA_BOCA.rolling(window=window_size).mean()
+# data_co.CO_CENTENARIO = data_co.CO_CENTENARIO.astype(float)
+# # data_co.CO_CORDOBA = data_co.CO_CORDOBA.astype(float)
+# # data_co.CO_LA_BOCA = data_co.CO_LA_BOCA.astype(float)
 
 
-plt.plot(data_2022.FECHA, data_2022.CO_CENTENARIO, 'y.-', label="centenario")
-plt.plot(data_2022.FECHA, data_2022.CO_CENTENARIO_mm, 'r.-', label="media movil centenario")
-# plt.plot(data_2022.FECHA, data_2022.CO_CORDOBA, 'y.-', label="cordoba")
-#plt.plot(data_2022.FECHA, data_2022.CO_CORDOBA_mm, 'r.-', label="media movil centenario")
-# plt.plot(data_2022.FECHA, data_2022.CO_LA_BOCA, 'b.-', label="La Boca")
-#plt.plot(data_2022.FECHA, data_2022.CO_LA_BOCA_mm, 'r.-', label="media movil centenario")
-# plt.xlabel("Fechas")
-# plt.ylabel("Nivel de Monóxido de Carbono")
-# # # # plt.xticks(rotation=45)
-plt.legend()
-plt.show()
+
+# plt.plot(data_co.FECHA, data_co.CO_CENTENARIO, 'y.-', label="centenario")
+# # plt.plot(data_co.FECHA, data_co.CO_CORDOBA, 'r.-', label="cordoba")
+# # plt.plot(data_co.FECHA, data_co.CO_LA_BOCA, 'b.-', label="La Boca")
+# # plt.xlabel("Fechas")
+# # plt.ylabel("Nivel de Monóxido de Carbono")
+# # # # # plt.xticks(rotation=45)
+# plt.legend()
+# plt.show()
